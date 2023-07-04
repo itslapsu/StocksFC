@@ -12,8 +12,8 @@ if (theme) {
     document.body.classList.add("dark-theme");
   }
 } else {
-  localStorage.setItem("theme", "light");
-  document.body.classList.add("light-theme");
+  localStorage.setItem("theme", "dark");
+  document.body.classList.add("dark-theme");
 }
 
 themeSwitcher.addEventListener("click", (e) => {
