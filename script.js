@@ -2,8 +2,13 @@ const popupOpenButton = document.querySelectorAll(".popup-open");
 const popupWrapper = document.querySelector(".popup-wrapper");
 const popupCloseButton = document.querySelector(".popup__close");
 const themeSwitcher = document.querySelector(".header__buttons-switch");
+const loader = document.querySelector(".loader");
 
 let theme = localStorage.getItem("theme");
+
+window.addEventListener("load", function () {
+  loader.remove();
+});
 
 if (theme) {
   if (theme === "light") {

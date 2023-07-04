@@ -409,7 +409,9 @@ body.light-theme {
 }
 
 .popup__link {
-  color: #76bb39;
+  background: linear-gradient(135deg, #7c96fc 0%, #18b083 100%);
+  background-clip: text;
+  color: transparent;
   text-align: center;
   font-weight: 500;
   line-height: 24px;
@@ -428,6 +430,24 @@ body.light-theme {
 
 .no-scroll {
   overflow: hidden;
+}
+
+.loader {
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: linear-gradient(135deg, #7c96fc 0%, #18b083 100%);
+}
+
+.loader__svg {
+  width: 150px;
+  height: 150px;
 }
 
 @media screen and (max-width: 1024px) {
